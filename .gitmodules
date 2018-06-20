@@ -1,3 +1,0 @@
-[submodule "Plugins/NativeTextureLoader/jni/libpng-android"]
-	path = Plugins/NativeTextureLoader/jni/libpng-android
-	url = git@github.com:julienr/libpng-android.git

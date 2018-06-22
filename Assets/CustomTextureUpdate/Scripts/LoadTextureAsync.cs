@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CustomTextureUpdate 
 {
 
-public class Loader : MonoBehaviour
+public class LoadTextureAsync : MonoBehaviour
 {
     [SerializeField]
     string path = "hecomi.png";
@@ -32,8 +32,15 @@ public class Loader : MonoBehaviour
             Lib.DestroyLoader(id_);
         }
 
-        command_.Dispose();
-        Destroy(texture_);
+        if (command_ != null)
+        {
+            command_.Dispose();
+        }
+
+        if (texture_ != null)
+        {
+            Destroy(texture_);
+        }
     }
 
     IEnumerator LoadImage()
@@ -82,7 +89,7 @@ public class Loader : MonoBehaviour
         var renderer = GetComponent<Renderer>();
         renderer.material.mainTexture = texture_;
 
-        Profiler.BeginSample("Loader.cs - CustomTextureUpdate");
+        Profiler.BeginSample("Loader.cs - CommandBuffer");
         {
             var callback = Lib.GetTextureUpdateCallback();
             command_.IssuePluginCustomTextureUpdate(callback, texture_, id_);

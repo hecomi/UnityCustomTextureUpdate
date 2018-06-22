@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		582ECCDA20D6217300CE339D /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B5174A20D62136006F9424 /* libpng16.a */; };
-		58B5174720D620AD006F9424 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58B5174120D620AD006F9424 /* main.cpp */; };
-		58B5174820D620AD006F9424 /* png_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58B5174620D620AD006F9424 /* png_loader.cpp */; };
+		58CBED5520DD13660027CC5D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58CBED4F20DD13660027CC5D /* main.cpp */; };
+		58CBED5620DD13660027CC5D /* png_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58CBED5420DD13660027CC5D /* png_loader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58B5173620D62084006F9424 /* CustomTextureUpdate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTextureUpdate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B5173920D62084006F9424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58B5173F20D620AD006F9424 /* png_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = png_loader.h; path = ../../../src/png_loader.h; sourceTree = "<group>"; };
-		58B5174020D620AD006F9424 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../../src/util.h; sourceTree = "<group>"; };
-		58B5174120D620AD006F9424 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../src/main.cpp; sourceTree = "<group>"; };
-		58B5174320D620AD006F9424 /* IUnityInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityInterface.h; sourceTree = "<group>"; };
-		58B5174420D620AD006F9424 /* IUnityGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphics.h; sourceTree = "<group>"; };
-		58B5174520D620AD006F9424 /* IUnityRenderingExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityRenderingExtensions.h; sourceTree = "<group>"; };
-		58B5174620D620AD006F9424 /* png_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = png_loader.cpp; path = ../../../src/png_loader.cpp; sourceTree = "<group>"; };
 		58B5174A20D62136006F9424 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng16.a; path = ../../../../../../../../../usr/local/Cellar/libpng/1.6.34/lib/libpng16.a; sourceTree = "<group>"; };
+		58CBED4D20DD13660027CC5D /* png_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = png_loader.h; path = ../../src/png_loader.h; sourceTree = "<group>"; };
+		58CBED4E20DD13660027CC5D /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../src/util.h; sourceTree = "<group>"; };
+		58CBED4F20DD13660027CC5D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		58CBED5120DD13660027CC5D /* IUnityInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityInterface.h; sourceTree = "<group>"; };
+		58CBED5220DD13660027CC5D /* IUnityGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphics.h; sourceTree = "<group>"; };
+		58CBED5320DD13660027CC5D /* IUnityRenderingExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityRenderingExtensions.h; sourceTree = "<group>"; };
+		58CBED5420DD13660027CC5D /* png_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = png_loader.cpp; path = ../../src/png_loader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,25 +57,14 @@
 		58B5173820D62084006F9424 /* CustomTextureUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				58B5174120D620AD006F9424 /* main.cpp */,
-				58B5174620D620AD006F9424 /* png_loader.cpp */,
-				58B5173F20D620AD006F9424 /* png_loader.h */,
-				58B5174220D620AD006F9424 /* Unity */,
-				58B5174020D620AD006F9424 /* util.h */,
+				58CBED4F20DD13660027CC5D /* main.cpp */,
+				58CBED5420DD13660027CC5D /* png_loader.cpp */,
+				58CBED4D20DD13660027CC5D /* png_loader.h */,
+				58CBED5020DD13660027CC5D /* Unity */,
+				58CBED4E20DD13660027CC5D /* util.h */,
 				58B5173920D62084006F9424 /* Info.plist */,
 			);
 			path = CustomTextureUpdate;
-			sourceTree = "<group>";
-		};
-		58B5174220D620AD006F9424 /* Unity */ = {
-			isa = PBXGroup;
-			children = (
-				58B5174320D620AD006F9424 /* IUnityInterface.h */,
-				58B5174420D620AD006F9424 /* IUnityGraphics.h */,
-				58B5174520D620AD006F9424 /* IUnityRenderingExtensions.h */,
-			);
-			name = Unity;
-			path = ../../../src/Unity;
 			sourceTree = "<group>";
 		};
 		58B5174920D62136006F9424 /* Frameworks */ = {
@@ -84,6 +73,17 @@
 				58B5174A20D62136006F9424 /* libpng16.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58CBED5020DD13660027CC5D /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				58CBED5120DD13660027CC5D /* IUnityInterface.h */,
+				58CBED5220DD13660027CC5D /* IUnityGraphics.h */,
+				58CBED5320DD13660027CC5D /* IUnityRenderingExtensions.h */,
+			);
+			name = Unity;
+			path = ../../src/Unity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B5174820D620AD006F9424 /* png_loader.cpp in Sources */,
-				58B5174720D620AD006F9424 /* main.cpp in Sources */,
+				58CBED5620DD13660027CC5D /* png_loader.cpp in Sources */,
+				58CBED5520DD13660027CC5D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +274,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = ../../../../Assets/CustomTextureUpdate/Plugins/x86_64;
+				CONFIGURATION_BUILD_DIR = ../../../Assets/CustomTextureUpdate/Plugins/x86_64;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = CustomTextureUpdate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -294,7 +294,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = ../../../../Assets/CustomTextureUpdate/Plugins/x86_64;
+				CONFIGURATION_BUILD_DIR = ../../../Assets/CustomTextureUpdate/Plugins/x86_64;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = CustomTextureUpdate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";

@@ -92,7 +92,7 @@ public class LoadTextureAsync : MonoBehaviour
         Profiler.BeginSample("Loader.cs - CommandBuffer");
         {
             var callback = Lib.GetTextureUpdateCallback();
-            command_.IssuePluginCustomTextureUpdate(callback, texture_, id_);
+            command_.IssuePluginCustomTextureUpdateV2(callback, texture_, id_);
             Graphics.ExecuteCommandBuffer(command_); 
             command_.Clear();
         }

@@ -71,13 +71,13 @@ UNITY_INTERFACE_EXPORT bool UNITY_INTERFACE_API HasLoaded(unsigned int id)
     return pLoader && pLoader->HasLoaded();
 }
 
-void OnTextureUpdate(int eventId, void *pData)
+void UNITY_INTERFACE_API OnTextureUpdate(int eventId, void *pData)
 {
     const auto event = static_cast<UnityRenderingExtEventType>(eventId);
 
-    if (event == kUnityRenderingExtEventUpdateTextureBegin)
+    if (event == kUnityRenderingExtEventUpdateTextureBeginV2)
     {
-        auto *pParams = reinterpret_cast<UnityRenderingExtTextureUpdateParams*>(pData);
+        auto *pParams = reinterpret_cast<UnityRenderingExtTextureUpdateParamsV2*>(pData);
         const auto id = pParams->userData;
         if (auto *pLoader = GetLoader(id))
         {
@@ -92,9 +92,9 @@ void OnTextureUpdate(int eventId, void *pData)
             }
         }
     }
-    else if (event == kUnityRenderingExtEventUpdateTextureEnd)
+    else if (event == kUnityRenderingExtEventUpdateTextureEndV2)
     {
-        auto *pParams = reinterpret_cast<UnityRenderingExtTextureUpdateParams*>(pData);
+        auto *pParams = reinterpret_cast<UnityRenderingExtTextureUpdateParamsV2*>(pData);
         pParams->texData = nullptr;
     }
 }

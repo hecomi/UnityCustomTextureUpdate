@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 // Unity native plugin API
 // Compatible with C99

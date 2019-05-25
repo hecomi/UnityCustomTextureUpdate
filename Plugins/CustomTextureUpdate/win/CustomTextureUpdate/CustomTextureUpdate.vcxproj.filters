@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CustomTextureUpdate">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CustomTextureUpdate\Unity">
+      <UniqueIdentifier>{94d6b7fe-f4d0-46c8-878f-8c6985cd5fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomTextureUpdate\Png">
+      <UniqueIdentifier>{132fe4ef-bd4f-4d6a-8212-1b0fa870f928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomTextureUpdate\Common">
+      <UniqueIdentifier>{60eb371d-8cd8-4653-915d-b1625625f216}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Unity\IUnityGraphics.h">
+      <Filter>CustomTextureUpdate\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Unity\IUnityInterface.h">
+      <Filter>CustomTextureUpdate\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Unity\IUnityRenderingExtensions.h">
+      <Filter>CustomTextureUpdate\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\png_loader.h">
+      <Filter>CustomTextureUpdate\Png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util.h">
+      <Filter>CustomTextureUpdate\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>CustomTextureUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\png_loader.cpp">
+      <Filter>CustomTextureUpdate\Png</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

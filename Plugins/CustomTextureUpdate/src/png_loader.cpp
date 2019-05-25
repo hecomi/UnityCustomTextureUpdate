@@ -31,7 +31,7 @@ void PngLoader::Load(const void *pData, size_t dataSize)
     struct Data
     {
         const unsigned char *m_pData;
-        unsigned long m_offset;
+        size_t m_offset;
     };
     Data data
     {
@@ -64,7 +64,7 @@ void PngLoader::Load(const void *pData, size_t dataSize)
     m_data = std::make_unique<unsigned char[]>(rowBytes * m_height);
 
     const auto rows = png_get_rows(png, info);
-    for (int i = 0; i < m_height; ++i)
+    for (unsigned int i = 0; i < m_height; ++i)
     {
         const size_t offset = rowBytes * i;
         memcpy(m_data.get() + offset, rows[i], rowBytes);
